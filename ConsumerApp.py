@@ -16,7 +16,7 @@ class Main:
         .read \
         .format("kafka") \
         .option("kafka.bootstrap.servers", "localhost:9092") \
-        .option("subscribe", "test-4") \
+        .option("subscribe", "test-6") \
         .load()
 
     casted = df.selectExpr("CAST(value AS STRING)")
